@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo vista contralador</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <style>
-        div{
-            background-color: coral;
-        }
-    </style>
-    <!--Formas de trabajr con css
-    1. Mediante atributo de la etiqueta >h1 style="font-size:20px;>" MALA PRACTICA
-    2.Mediante la etiqueta <style>
-    3. Mediante una hoja de estilos, es un archivo independiente, styles.css, main.css-->
-
-    <h1 style="font-size: 24px;color: blueviolet;">Estilos</h1>
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quisquam, accusamus ea obcaecati architecto nulla hic earum corrupti exercitationem voluptate necessitatibus! Animi iure molestias doloribus magnam adipisci dignissimos quae dolores.
-        Provident doloribus blanditiis alias unde. Harum fugiat eaque doloribus molestiae delectus eum reiciendis necessitatibus consectetur incidunt assumenda voluptatibus eligendi consequuntur, nulla adipisci sequi commodi debitis accusantium tempora neque quis tempore.
+<div class="container-fluid">
+    <h1><strong>Modelo Vista controlador</strong></h1>
+    <div id="listDataStundent">
+        <ul id="listStudents" class="list-group-numbered"></ul>
     </div>
+    <template id="templateList">
+        <li class="list-group-item"></li>
+    </template><br>
+    <button id="btnListar" class="btn btn-primary">Obtener Lista</button>
+    <script type="module" src="./controller/controllerStundents.js"></script>
+    
+
+</div>
+
 </body>
 </html>
